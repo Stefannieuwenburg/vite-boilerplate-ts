@@ -2,9 +2,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 //import PostList from './components/postlist/PostList';
-//import MyFetch from './components/AsyncData/asyncFetch'
+import { AsyncFetch } from './components/fetchdata/AsyncFetch';
 //import PostList from './components/postlist/PostList';
-import Posts from './components/fetchdata/Posts';
+//import Posts from './components/fetchdata/Posts';
 import { useState} from "react";
 import './App.css'
 
@@ -33,10 +33,7 @@ const App: React.FC = () => {
                     count is {count}
                 </button>
             </div>
-
-            <div>
-               <Posts />
-            </div>
+            <AsyncFetch />
         </>
     );
 };

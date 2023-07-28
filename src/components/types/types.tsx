@@ -13,3 +13,6 @@ export interface FetchProps  {
     body: string;
     userId: number;
 };
+export interface FetchProps {
+    // define any props here
+}

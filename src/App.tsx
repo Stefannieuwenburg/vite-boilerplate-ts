@@ -33,7 +33,7 @@ const App: React.FC = () => {
                     count is {count}
                 </button>
             </div>
-            <AsyncFetch />
+            <AsyncFetch userId={1} title={"test"} body={"test"} id={1} />
         </>
     );
 };

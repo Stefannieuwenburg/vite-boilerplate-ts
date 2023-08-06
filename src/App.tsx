@@ -1,41 +1,33 @@
-
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
 //import PostList from './components/postlist/PostList';
-import { AsyncFetch } from './components/fetchdata/AsyncFetch';
+//import { AsyncFetch } from './components/fetchdata/AsyncFetch';
 //import PostList from './components/postlist/PostList';
 //import Posts from './components/fetchdata/Posts';
-import { useState} from "react";
+//import { useState} from "react";
+//import Parent from "../src/components/childeren/Parent";
+//import Child from "../src/components/childeren/Child";
+//import Second from "../src/components/childeren/Second";
+import  EventPage  from "./components/pages/EventPage";
+import { FC} from "react";
 import './App.css'
 
 
+interface Props {
+  //
+}
 
-const App: React.FC = () => {
-    const [count, setCount] = useState(0);
 
-    return (
-        <>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-            </div>
-            <AsyncFetch userId={1} title={"test"} body={"test"} id={1} />
-        </>
-    );
+const App:FC<Props>  = () => {
+  return (
+    <>
+      <h3>Typscript</h3>
+        <EventPage />
+    </>
+  );
 };
 
-export default App
+export default App;
+
+//https://www.youtube.com/watch?v=WlxcujsvcIY&list=PL5HEEqjk82MOs8N12YWrxSk3KVfJV9jIC&index=18
+//time 35.25

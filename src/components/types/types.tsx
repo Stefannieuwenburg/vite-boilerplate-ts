@@ -1,4 +1,6 @@
 //Export Type/interface
+import { ReactNode } from "react";
+
 
 export type PostProps = {
     id: number;
@@ -15,4 +17,8 @@ export interface FetchProps  {
 };
 export interface FetchProps {
     // define any props here
+}
+
+export interface Props {
+  children: ReactNode;
 }

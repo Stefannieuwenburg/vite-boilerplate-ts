@@ -49,3 +49,5 @@ export const AsyncFetch: React.FC<PostProps> = () => {
        line-height: 30px;
        text-align: center;
    `;
+
+   //<AsyncFetch userId={1} title="test" body="test" id={1} />;

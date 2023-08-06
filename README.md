@@ -1,6 +1,26 @@
 # vite-boilerplate-ts
 # Project Boiler Plate for Typscript
 
+# Look out this is ver. 18 TS
+-StatelessComponent
++FunctionComponent=(version 18)
+
+-SFC
++FC=(version 18)
+
+-React.ReactType
++React.ElementType=(version 18)
+
+-SFCElement
++FunctionComponentElement=(version 18)
+
+// no replacement
+-Props
+-RefForwardingComponent
+-SFCFactory
+
+
+
 # TECH USED:
 - React-Vite
 - npm install axios
@@ -9,8 +29,6 @@
 - GitHub
 - npm install styled-components
 - npm install node-fetch
-- npm install
-- npm run dev
 - Types
 - Button
 - Hooks

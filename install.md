@@ -5,3 +5,5 @@
  $ npm install node-fetch
  npm install
  npm run dev
+ npm install -D tailwindcss
+ npx tailwindcss init

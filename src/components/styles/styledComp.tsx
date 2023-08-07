@@ -1,13 +1,39 @@
 
 import styled from "styled-components";
 
+export const StyledContainer = styled.section`
+  background-color: #6f00ff;
+  font-family: "Roboto", sans-serif;
+  margin: 1.2rem;
+  padding: 0.9rem 3rem;
+  color: whitesmoke;
+  font-size: 0.9rem;
+`;
 
+export const StyledWrapper = styled.section`
+  background-color: #ffa60088;
+  font-family: "Roboto", sans-serif;
+  margin: 1.2rem;
+  padding: 0.9rem 3rem;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  border-radius: 10px;
+`;
+
+export const StyledHeader = styled.h1`
+  font-size: 24px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 1.2rem;
+  padding: 0.9rem 3rem;
+  color: whitesmoke;
+`;
 
 export const StyledButton = styled.button`
   font-family: "Roboto", sans-serif;
   margin: 1.2rem;
   padding: 0.9rem 3rem;
-  background-color:"green";
+  background-color:#ffa60088;
   color: whitesmoke;
   font-size: 0.9rem;
   cursor: pointer;
@@ -25,6 +51,7 @@ export const StyledForm = styled.form`
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 5px;
+  text-align: center;
 `;
 
 export const StyledLabel = styled.label`
@@ -37,7 +64,7 @@ export const StyledLabel = styled.label`
 export const StyledInput = styled.input`
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
 `;
 

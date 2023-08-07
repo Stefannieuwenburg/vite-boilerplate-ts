@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { styled } from "styled-components";
-
+import { StyledInput, StyledButton } from "../styles/styledComp";
 //import "./App.css";
 
 interface Props {
@@ -11,6 +10,10 @@ const EventPage: FC<Props> = () => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log("clicked Search");
+  };
+  const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
+    e.preventDefault();
+    console.log("post with" + id, "have bin deleted");
   };
   return (
     <>
@@ -31,7 +34,9 @@ const EventPage: FC<Props> = () => {
             Ipsum passages en meer recentelijk door desktop publishing software
             zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
           </p>
-          <StyledButton>Delete</StyledButton>
+          <StyledButton onClick={(e) => handleDelete(e, 1)}>
+            Delete
+          </StyledButton>
           <div className="post">
             <h1>Lorem ipson dolar sit amet consectetur adipisicing elit</h1>
             <p>
@@ -42,7 +47,9 @@ const EventPage: FC<Props> = () => {
               publishing software zoals Aldus PageMaker die versies van Lorem
               Ipsum bevatten.
             </p>
-            <StyledButton>Delete</StyledButton>
+            <StyledButton onClick={(e) => handleDelete(e, 2)}>
+              Delete
+            </StyledButton>
           </div>
         </div>
       </form>
@@ -51,31 +58,3 @@ const EventPage: FC<Props> = () => {
 };
 
 export default EventPage;
-
-
-//styled-components
-export const StyledButton = styled.button`
-  font-family: "Roboto", sans-serif;
-  margin: 1.2rem;
-  padding: 0.9rem 3rem;
-  background-color: green;
-  color: whitesmoke;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  transition: 0.6s;
-  &:hover {
-    letter-spacing: 0.2rem;
-    color: white;
-    transition: 0.6s;
-  }
-`;
-export const StyledInput = styled.input`
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-

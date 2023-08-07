@@ -37,3 +37,5 @@
 - "react-dom": "^18.2.0",
 - "styled-components": "^6.0.5"
 -  "typescript": "^5.0.2",
+-  npm install -D tailwindcss
+-  

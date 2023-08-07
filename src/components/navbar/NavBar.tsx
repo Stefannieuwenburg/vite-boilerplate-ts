@@ -1,49 +1,8 @@
-import React from "react";
-import styled from "styled-components";
 
+import { Container, Logo, Menu, MenuItem } from "../styles/styledNavbar";
+import { FC } from "react";
 
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: center;
-    justify-content: space-between;
-    align-items: center;
-    background-color: grey;
-    color: white;
-    margin: 1.2rem;
-    padding: 1.2rem;
-`;
-
-const Logo = styled.div`
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    font-size: 1.5rem;
-    img {
-        width: 10%;
-        height: auto;
-        object-fit: cover;
-    }
-    a{
-        color:green;
-    }
-`;
-
-const Menu = styled.div`
-    display: flex;
-    justify-content: flex-end;
-`;
-
-const MenuItem = styled.div`
-    margin-right: 30px;
-    font-size:1.0rem;
-    a{
-        color:green;
-    } 
-
-`;
-
-const NavBar: React.FC = () => {
+const NavBar: FC = () => {
     return (
         <>
             <Container>
@@ -52,7 +11,7 @@ const NavBar: React.FC = () => {
                 </Logo>
                 <Menu>
                     <MenuItem>
-                        <a href="/#">Home Page</a>
+                        <a href="/#">HomePage</a>
                     </MenuItem>
                     <MenuItem>
                         <a href="/#">About</a>

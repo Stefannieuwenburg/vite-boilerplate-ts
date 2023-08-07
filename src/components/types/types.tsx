@@ -22,3 +22,8 @@ export interface FetchProps {
 export interface Props {
   children: ReactNode;
 }
+
+export type UserType = {
+  sessionId: number;
+  name: string;
+};

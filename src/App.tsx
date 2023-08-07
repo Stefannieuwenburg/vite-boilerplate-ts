@@ -8,26 +8,34 @@
 //import Parent from "../src/components/childeren/Parent";
 //import Child from "../src/components/childeren/Child";
 //import Second from "../src/components/childeren/Second";
-import  EventPage  from "./components/pages/EventPage";
-import { FC} from "react";
-import './App.css'
+//import EventPage from "./components/pages/EventPage";
+import { StyledWrapper } from "./components/styles/styledComp";
+//import GlobalStyle from "./GlobalStyle";
+import LoginForm from "./components/pages/loginForm";
+import NavBar from "../src/components/navbar/NavBar"
+import { FC } from "react";
+import "./App.css";
 
 
-interface Props {
-  //
-}
 
-
-const App:FC<Props>  = () => {
+const App:FC = () => {
   return (
     <>
-      <h3>Typscript</h3>
-        <EventPage />
-    </>
+     <NavBar />
+      <StyledWrapper>
+        <LoginForm />
+
+
+
+    </StyledWrapper>
+      
+
+      
+  </>
   );
 };
 
 export default App;
 
 //https://www.youtube.com/watch?v=WlxcujsvcIY&list=PL5HEEqjk82MOs8N12YWrxSk3KVfJV9jIC&index=18
-//time 35.25
+//time 39.21

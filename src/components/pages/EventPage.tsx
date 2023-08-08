@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { StyledInput, StyledButton } from "../styles/styledComp";
+import { StyledInput, StyledButton } from "../styles/styles.comp";
 //import "./App.css";
 
 interface Props {

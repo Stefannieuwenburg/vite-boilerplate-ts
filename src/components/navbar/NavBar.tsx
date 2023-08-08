@@ -1,5 +1,5 @@
 
-import { Container, Logo, Menu, MenuItem } from "../styles/styledNavbar";
+import { Container, Logo, Menu, MenuItem } from "../styles/styles.navbar";
 import { FC } from "react";
 
 const NavBar: FC = () => {

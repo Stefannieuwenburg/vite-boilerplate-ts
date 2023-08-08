@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { StyledForm, StyledLabel, StyledInput, StyledButton } from "../styles/styledloginForm";
+import { StyledForm, StyledLabel, StyledInput, StyledButton } from "../styles/styles.loginForm";
 import {UserType} from "../types/types"
 import { FC } from "react";
 

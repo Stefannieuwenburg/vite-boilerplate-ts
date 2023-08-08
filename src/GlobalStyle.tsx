@@ -1,7 +1,26 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+ *{
+    @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Karla", "Segoe UI", "Roboto",'Roboto Mono', monospace,
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    scroll-behavior: smooth;
+}
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+}
+
 :root{
     /* ---Page Color--- */
     --Main-Color:#d3ad7f;
@@ -44,22 +63,11 @@ const GlobalStyle = createGlobalStyle`
     --fs-smaller: 0.75rem;
 }
 
-*{
-    @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: "Karla", "Segoe UI", "Roboto",'Roboto Mono', monospace,
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    scroll-behavior: smooth;
-}
-/* html {
-    background:var(--Gray-Color)
-} */
+
+
 body {
-    font-family: var(--Main-font)
+    font-family: var(--Main-font);
+    color:var(--Main-Color);
 }
 img {
   width:90%;

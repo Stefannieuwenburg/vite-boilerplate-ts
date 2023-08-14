@@ -1,5 +1,5 @@
-import NavBar from "../src/components/navbar/NavBar";
-import Theme from "./context/theme"
+import NavBar from "./componenten/navbar/NavBar";
+import Theme from "./context/theme";
 import "./App.css";
 //import { FC } from "react";
 //import reactLogo from './assets/react.svg'
@@ -15,9 +15,9 @@ import "./App.css";
 //import EventPage from "./components/pages/EventPage";
 //import GlobalStyle from "./GlobalStyle";
 //import LoginForm from "./components/pages/loginForm";
-import {Container}from "./components/styles/Styled"
+import { Container } from "./componenten/styles/Styled";
 
-const App = ({children}: {children: React.ReactNode}) => {
+const App = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Theme>
@@ -33,4 +33,3 @@ const App = ({children}: {children: React.ReactNode}) => {
 };
 
 export default App;
-

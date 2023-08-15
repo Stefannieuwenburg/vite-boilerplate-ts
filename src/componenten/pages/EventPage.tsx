@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { StyledInput, StyledButton } from "../styles/styles.comp";
+import { FC, MouseEvent } from "react";
+import { StyledInput, StyledButton } from "../styles/Styled";
 //import "./App.css";
 
 interface Props {
@@ -34,7 +34,7 @@ const EventPage: FC<Props> = () => {
             Ipsum passages en meer recentelijk door desktop publishing software
             zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
           </p>
-          <StyledButton onClick={(e) => handleDelete(e, 1)}>
+          <StyledButton onClick={(e: MouseEvent<HTMLButtonElement>) => handleDelete(e, 1)}>
             Delete
           </StyledButton>
           <div className="post">
@@ -47,7 +47,7 @@ const EventPage: FC<Props> = () => {
               publishing software zoals Aldus PageMaker die versies van Lorem
               Ipsum bevatten.
             </p>
-            <StyledButton onClick={(e) => handleDelete(e, 2)}>
+            <StyledButton onClick={(e: MouseEvent<HTMLButtonElement>) => handleDelete(e, 2)}>
               Delete
             </StyledButton>
           </div>
